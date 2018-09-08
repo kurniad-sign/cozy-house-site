@@ -580,7 +580,7 @@ section.ch-hero {
   padding-top: 100px;
   width: 443px; }
   .ch-hero-desc .ch-hero__title {
-    font-size: 43px;
+    font-size: 57px;
     font-weight: 400;
     margin-bottom: 43px; }
   .ch-hero-desc .ch-hero__description {
@@ -588,4 +588,27 @@ section.ch-hero {
 
 .ch-cta--button {
   padding-bottom: 140px; }
+
+section.ch-about {
+  background-color: #ffffff;
+  padding: 100px 0;
+  display: flex;
+  position: relative;
+  align-items: center; }
+  section.ch-about .ch-about__image, section.ch-about .ch-about__description {
+    flex-grow: 1;
+    padding: 0 60px;
+    max-width: 100%; }
+  section.ch-about .ch-about__image {
+    flex-basis: 300px;
+    width: 300px; }
+  section.ch-about .ch-about__description {
+    flex-basis: 415px;
+    width: 415px; }
+    section.ch-about .ch-about__description h2 {
+      font-size: 35px;
+      margin-bottom: 37px; }
+    section.ch-about .ch-about__description p {
+      margin-bottom: 30px;
+      font-size: 17px; }
 

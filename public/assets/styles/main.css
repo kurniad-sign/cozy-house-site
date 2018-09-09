@@ -496,11 +496,15 @@ button {
   text-align: center;
   text-decoration: none;
   margin: 2px 0;
-  border: solid 1px transparent;
+  border: solid 2px #f1cdb3;
   border-radius: 25px;
-  padding: 15px 44px;
+  padding: 10px 44px;
   color: #545454;
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  transition: all .2s; }
+  .ch-btn:hover {
+    background: #f1cdb3;
+    color: #ffffff; }
 
 .ch-btn--primary {
   background-color: #f1cdb3;
@@ -509,14 +513,39 @@ button {
 .ch-btn--primary:active,
 .ch-btn--primary:hover {
   background-color: #d8ab8b;
-  border-color: currentColor; }
+  border-color: transparent; }
+
+.ch-cards {
+  flex-basis: 270px;
+  max-width: 100%;
+  display: flex;
+  border-radius: 9px;
+  flex-direction: column;
+  margin: 0 64px;
+  padding: 40px;
+  position: relative;
+  background-color: #fafafa;
+  font-family: "PT Serif", serif;
+  box-shadow: 0px 1px 35px rgba(0, 0, 0, 0.01), 0px 1px 27px 3px rgba(0, 0, 0, 0.1);
+  transition: transform .2s; }
+  .ch-cards:hover {
+    transform: translateY(-2%); }
+  .ch-cards figure {
+    margin: 0;
+    padding-bottom: 30px; }
+  .ch-cards p {
+    padding-bottom: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 20px; }
 
 body {
   background: #ffffff;
   font-family: "Muli", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  overflow-x: hidden; }
 
 h1, h2, h3, p {
   margin-top: 0;
@@ -535,10 +564,15 @@ ul, li {
   margin: 0;
   padding: 0; }
 
-.wrapper {
+img {
   max-width: 100%;
-  width: 1240px;
-  margin: 0 auto; }
+  height: auto; }
+
+.wrapper {
+  width: 1170px;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative; }
 
 section.ch-hero {
   background: url("/public/assets/images/Dog-hero.jpg");
@@ -553,6 +587,11 @@ section.ch-hero {
   position: relative;
   display: flex;
   padding: 40px 0; }
+  .ch-navigation > .wrapper {
+    align-items: center;
+    display: flex;
+    min-height: 3.25rem;
+    width: 100%; }
   .ch-navigation .ch-logo {
     display: flex;
     justify-content: flex-start;
@@ -592,9 +631,10 @@ section.ch-hero {
 section.ch-about {
   background-color: #ffffff;
   padding: 100px 0;
-  display: flex;
-  position: relative;
-  align-items: center; }
+  overflow: hidden; }
+  section.ch-about .ch-about-cozydog {
+    display: flex;
+    align-items: flex-start; }
   section.ch-about .ch-about__image, section.ch-about .ch-about__description {
     flex-grow: 1;
     padding: 0 60px;
@@ -611,4 +651,20 @@ section.ch-about {
     section.ch-about .ch-about__description p {
       margin-bottom: 30px;
       font-size: 17px; }
+
+.ch-dogfriends {
+  background-color: #f6f6f6;
+  padding: 60px 0; }
+  .ch-dogfriends .ch-dogfriends__title {
+    text-align: center;
+    padding-bottom: 60px;
+    color: #545454; }
+  .ch-dogfriends .ch-dog__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .ch-dogfriends .ch-dog__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px; }
 

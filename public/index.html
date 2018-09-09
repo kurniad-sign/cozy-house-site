@@ -12,8 +12,8 @@
 
 <body>
   <section class="ch-hero">
-    <div class="wrapper">
-      <header class="ch-navigation">
+    <header class="ch-navigation">
+      <div class="wrapper">
         <div class="ch-logo">
           <a href="#">
             <img src="./assets/images/CozyHouse-logo.png" alt="Logo">
@@ -27,43 +27,84 @@
             <li><a href="#">Contacts</a></li>
           </ul>
         </nav>
-      </header>
-      <div class="ch-hero-desc">
-        <h1 class="ch-hero__title">Not only people need a house</h1>
-        <p class="ch-hero__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida
-          est in porttitor porttitor. Duis sodales elementum ipsum, vehicula
-          condimentum erat fringilla et.
-        </p>
       </div>
-      <div class="ch-cta--button">
-        <a href="#" class="ch-btn ch-btn--primary">Make a friend</a>
+    </header>
+    <div class="ch-hero__intro">
+      <div class="wrapper">
+        <div class="ch-hero-desc">
+          <h1 class="ch-hero__title">Not only people need a house</h1>
+          <p class="ch-hero__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida
+            est in porttitor porttitor. Duis sodales elementum ipsum, vehicula
+            condimentum erat fringilla et.
+          </p>
+        </div>
+        <div class="ch-cta--button">
+          <a href="#" class="ch-btn ch-btn--primary">Make a friend</a>
+        </div>
       </div>
     </div>
   </section>
 
   <main>
-    <div class="wrapper">
-      <section class="ch-about">
-        <div class="ch-about__image">
-          <figure>
-            <img src="./assets/images/About-Cozy.png" alt="about dog">
-          </figure>
+    <section class="ch-about">
+      <div class="wrapper">
+        <div class="ch-about-cozydog">
+          <div class="ch-about__image">
+            <figure>
+              <img src="./assets/images/About-Cozy.png" alt="about dog">
+            </figure>
+          </div>
+          <div class="ch-about__description">
+            <h2>About the Shelter "Cozy House"</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.
+            </p>
+            <p>
+              Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis
+              ultrices pharetra. Morbi tempus at ante sit amet tristique.
+              Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim
+              lorem. Sed at ligula et sem mattis gravida ac vel erat.
+            </p>
+          </div>
         </div>
-        <div class="ch-about__description">
-          <h2>About the Shelter "Cozy House"</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.
-          </p>
-          <p>
-            Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis
-            ultrices pharetra. Morbi tempus at ante sit amet tristique.
-            Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim
-            lorem. Sed at ligula et sem mattis gravida ac vel erat.
-          </p>
+      </div>
+    </section>
+
+    <section class="ch-dogfriends">
+      <div class="wrapper">
+        <div class="ch-dogfriends__title">
+          <h1>Our friends who are looking for a house</h1>
         </div>
-      </section>
-    </div>
+        <div class="ch-dog__cards">
+          <div class="ch-cards">
+            <figure>
+              <img src="./assets/images/Cat.png" alt="image card 1">
+            </figure>
+            <p>Katrine</p>
+            <button class="ch-btn">Learn More</button>
+          </div>
+          <div class="ch-cards">
+            <figure>
+              <img src="./assets/images/Dog.png" alt="image card 2">
+            </figure>
+            <p>Jennifer</p>
+            <button class="ch-btn">Learn More</button>
+          </div>
+          <div class="ch-cards">
+            <figure>
+              <img src="./assets/images/Dog-2.png" alt="image card 3">
+            </figure>
+            <p>Woody</p>
+            <button class="ch-btn">Learn More</button>
+          </div>
+        </div>
+
+        <div class="ch-dog__button">
+          <button class="ch-btn ch-btn--primary" type="button">Get to know the rest</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="./assets/scripts/bundle.js"></script>

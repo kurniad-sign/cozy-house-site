@@ -190,4 +190,43 @@ section.ch-about {
   }
 }
 
+// Styling Cozy House Feature
+.ch-features {
+  padding: 80px 0;
+  position: relative;
 
+  & .ch-features__title {
+    color: $dark-black;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+  .ch-many-feature {
+    & ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      & .ch-feature-item {
+        padding: 0 60px;
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .item-icon {
+          margin-bottom: 28px;
+        }
+
+        & span {
+          font-family: $font-serif;
+          font-size: 17px;
+          color: $dark-black;
+          letter-spacing: .8px;
+        }
+      }
+    }
+  }
+}

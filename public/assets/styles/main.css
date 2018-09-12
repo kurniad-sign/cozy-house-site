@@ -668,3 +668,30 @@ section.ch-about {
     justify-content: center;
     padding-top: 60px; }
 
+.ch-features {
+  padding: 80px 0;
+  position: relative; }
+  .ch-features .ch-features__title {
+    color: #545454;
+    text-align: center;
+    padding-bottom: 80px; }
+  .ch-features .ch-many-feature ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .ch-features .ch-many-feature ul .ch-feature-item {
+      padding: 0 60px;
+      margin-bottom: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .ch-features .ch-many-feature ul .ch-feature-item .item-icon {
+        margin-bottom: 28px; }
+      .ch-features .ch-many-feature ul .ch-feature-item span {
+        font-family: "PT Serif", serif;
+        font-size: 17px;
+        color: #545454;
+        letter-spacing: .8px; }
+

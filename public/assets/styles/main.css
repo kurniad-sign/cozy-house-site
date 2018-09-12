@@ -695,3 +695,42 @@ section.ch-about {
         color: #545454;
         letter-spacing: .8px; }
 
+.ch-donation {
+  background-color: #f6f6f6;
+  padding: 80px 0;
+  position: relative; }
+  .ch-donation .ch-donation-desc {
+    display: flex;
+    align-items: center; }
+    .ch-donation .ch-donation-desc .column-image {
+      flex: 1;
+      padding: 0 30px; }
+      .ch-donation .ch-donation-desc .column-image figure {
+        margin: 0;
+        padding: 20px; }
+    .ch-donation .ch-donation-desc .column-description {
+      flex-basis: 560px;
+      padding: 0 30px;
+      font-family: "PT Serif", serif; }
+      .ch-donation .ch-donation-desc .column-description .ch-donation__title {
+        line-height: 1.6;
+        color: #545454; }
+        .ch-donation .ch-donation-desc .column-description .ch-donation__title h1 {
+          line-height: 1.6; }
+      .ch-donation .ch-donation-desc .column-description .ch-donation-account {
+        padding-bottom: 15px; }
+        .ch-donation .ch-donation-desc .column-description .ch-donation-account p {
+          margin-bottom: 15px;
+          letter-spacing: 1.3px; }
+        .ch-donation .ch-donation-desc .column-description .ch-donation-account button.ch-btn--donation {
+          display: flex;
+          align-items: center;
+          padding: 8px 20px; }
+          .ch-donation .ch-donation-desc .column-description .ch-donation-account button.ch-btn--donation .ch-donation-icon {
+            margin-right: 12px; }
+      .ch-donation .ch-donation-desc .column-description .ch-legal-information {
+        padding-top: 15px;
+        font-size: 11px;
+        letter-spacing: .4px;
+        color: #b2b2b2; }
+

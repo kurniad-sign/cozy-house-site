@@ -230,3 +230,66 @@ section.ch-about {
     }
   }
 }
+
+// Styling Cozy House Donation section
+.ch-donation {
+  background-color: $gray;
+  padding: 80px 0;
+  position: relative;
+
+  & .ch-donation-desc {
+    display: flex;
+    align-items: center;
+
+    & .column-image {
+      flex: 1;
+      padding: 0 30px;
+
+      figure {
+        margin: 0;
+        padding: 20px;
+      }
+    }
+
+    & .column-description {
+      flex-basis: 560px;
+      padding: 0 30px;
+      font-family: $font-serif;
+
+      .ch-donation__title {
+        line-height: $line-height;
+        color: $dark-black;
+
+        h1 {
+          line-height: $line-height;
+        }
+      }
+
+      .ch-donation-account {
+        padding-bottom: 15px;
+
+        p {
+          margin-bottom: 15px;
+          letter-spacing: 1.3px;
+        }
+
+        button.ch-btn--donation {
+          display: flex;
+          align-items: center;
+          padding: 8px 20px;
+          
+          & .ch-donation-icon {
+            margin-right: 12px;
+          }
+        }
+      }
+
+      .ch-legal-information {
+        padding-top: 15px;
+        font-size: 11px;
+        letter-spacing: .4px;
+        color: #b2b2b2;
+      }
+    }
+  }
+}

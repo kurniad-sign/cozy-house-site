@@ -734,3 +734,28 @@ section.ch-about {
         letter-spacing: .4px;
         color: #b2b2b2; }
 
+.ch-footer {
+  padding: 80px 0;
+  position: relative;
+  background: url("/public/assets/images/Dog-footer.jpg") center center;
+  background-size: cover; }
+  .ch-footer .ch-footer-information {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch; }
+    .ch-footer .ch-footer-information .information-1, .ch-footer .ch-footer-information .information-2 {
+      padding: 0 30px;
+      flex-basis: 325px; }
+    .ch-footer .ch-footer-information .ch-footer__title {
+      color: #f6f6f6;
+      font-weight: 300; }
+    .ch-footer .ch-footer-information .ch-information-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: stretch; }
+      .ch-footer .ch-footer-information .ch-information-list .ch-information-listitem {
+        color: #f1cdb3;
+        font-family: "PT Serif", serif; }
+

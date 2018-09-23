@@ -293,3 +293,41 @@ section.ch-about {
     }
   }
 }
+
+// Styling cozy house footer section
+
+.ch-footer {
+  padding: 80px 0;
+  position: relative;
+  background: url('/public/assets/images/Dog-footer.jpg') center center;
+  background-size: cover;
+
+  .ch-footer-information {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+
+    .information-1, .information-2 {
+      padding: 0 30px;
+      flex-basis: 325px;
+    }
+
+    .ch-footer__title {
+      color: $gray;
+      font-weight: 300;
+    }
+
+    .ch-information-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: stretch;
+
+      .ch-information-listitem {
+        color: $title;
+        font-family: $font-serif;
+      }
+    }
+  }
+}

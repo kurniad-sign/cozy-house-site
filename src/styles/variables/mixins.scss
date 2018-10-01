@@ -1,0 +1,9 @@
+@mixin spacing {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@mixin small-spacing {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}

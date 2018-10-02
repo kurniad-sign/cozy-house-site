@@ -3,11 +3,24 @@
 @import './component/_all.scss';
 
 .wrapper {
-  width: 1170px;
-  max-width: 1170px;
   margin: 0 auto;
   position: relative;
+  @include mediaSmartphone {
+    max-width: $smartphone - (2 * 16px);
+    width: $smartphone - (2 * 16px);
+  }
+
+  @include mediaTablet {
+    max-width: $tablet - (2 * 16px);
+    width: $tablet - (2 * 16px);
+  }
+
+  @include mediaDesktop {
+    max-width: $desktop - (2 * 16px);
+    width: $desktop - (2 * 16px);
+  }
 }
+
 
 section.ch-hero {
   background: url('/public/assets/images/Dog-hero.jpg');
@@ -87,11 +100,18 @@ section.ch-hero {
   padding-bottom: 140px;
 }
 
+// Add spacing into each section
+section.ch-about,
+section.ch-dogfriends,
+section.ch-features,
+section.ch-donation,
+.ch-footer {
+  @include spacing(5rem);
+  position: relative;
+}
+
 // Styling About Cozy House Section
 section.ch-about {
-  background-color: $white;
-  padding: 100px 0;
-  overflow: hidden;
 
   & .ch-about-cozydog {
     display: flex;
@@ -128,7 +148,6 @@ section.ch-about {
 // Styling Ch Dog SLider
 .ch-dogfriends {
   background-color: $gray;
-  padding: 60px 0;
 
   & .ch-dogfriends__title {
     text-align: center;
@@ -151,7 +170,6 @@ section.ch-about {
 
 // Styling Cozy House Feature
 .ch-features {
-  padding: 80px 0;
   position: relative;
 
   & .ch-features__title {
@@ -193,7 +211,6 @@ section.ch-about {
 // Styling Cozy House Donation section
 .ch-donation {
   background-color: $gray;
-  padding: 80px 0;
   position: relative;
 
   & .ch-donation-desc {
@@ -256,8 +273,6 @@ section.ch-about {
 // Styling cozy house footer section
 
 .ch-footer {
-  padding: 80px 0;
-  position: relative;
   background: url('/public/assets/images/Dog-footer.jpg') center center;
   background-size: cover;
 

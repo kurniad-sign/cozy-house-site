@@ -1,9 +1,23 @@
-@mixin spacing {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+@mixin spacing($spc) {
+  padding-top: $spc;
+  padding-bottom: $spc;
 }
 
-@mixin small-spacing {
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
+@mixin mediaSmartphone {
+  @media screen and (min-width: $smartphone) {
+    @content
+  }
+
+}
+
+@mixin mediaTablet {
+  @media screen and (min-width: $tablet) {
+    @content
+  }
+}
+
+@mixin mediaDesktop {
+  @media screen and (min-width: $desktop) {
+    @content
+  }
 }

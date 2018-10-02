@@ -329,10 +329,20 @@ button {
     font-size: 20px; }
 
 .wrapper {
-  width: 1170px;
-  max-width: 1170px;
   margin: 0 auto;
   position: relative; }
+  @media screen and (min-width: 440px) {
+    .wrapper {
+      max-width: 408px;
+      width: 408px; } }
+  @media screen and (min-width: 768px) {
+    .wrapper {
+      max-width: 736px;
+      width: 736px; } }
+  @media screen and (min-width: 1200px) {
+    .wrapper {
+      max-width: 1168px;
+      width: 1168px; } }
 
 section.ch-hero {
   background: url("/public/assets/images/Dog-hero.jpg");
@@ -388,33 +398,40 @@ section.ch-hero {
 .ch-cta--button {
   padding-bottom: 140px; }
 
-section.ch-about {
-  background-color: #ffffff;
-  padding: 100px 0;
-  overflow: hidden; }
-  section.ch-about .ch-about-cozydog {
-    display: flex;
-    align-items: flex-start; }
-  section.ch-about .ch-about__image, section.ch-about .ch-about__description {
-    flex-grow: 1;
-    padding: 0 60px;
-    max-width: 100%; }
-  section.ch-about .ch-about__image {
-    flex-basis: 300px;
-    width: 300px; }
-  section.ch-about .ch-about__description {
-    flex-basis: 415px;
-    width: 415px; }
-    section.ch-about .ch-about__description h2 {
-      font-size: 35px;
-      margin-bottom: 37px; }
-    section.ch-about .ch-about__description p {
-      margin-bottom: 30px;
-      font-size: 17px; }
+section.ch-about,
+section.ch-dogfriends,
+section.ch-features,
+section.ch-donation,
+.ch-footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative; }
+
+section.ch-about .ch-about-cozydog {
+  display: flex;
+  align-items: flex-start; }
+
+section.ch-about .ch-about__image, section.ch-about .ch-about__description {
+  flex-grow: 1;
+  padding: 0 60px;
+  max-width: 100%; }
+
+section.ch-about .ch-about__image {
+  flex-basis: 300px;
+  width: 300px; }
+
+section.ch-about .ch-about__description {
+  flex-basis: 415px;
+  width: 415px; }
+  section.ch-about .ch-about__description h2 {
+    font-size: 35px;
+    margin-bottom: 37px; }
+  section.ch-about .ch-about__description p {
+    margin-bottom: 30px;
+    font-size: 17px; }
 
 .ch-dogfriends {
-  background-color: #f6f6f6;
-  padding: 60px 0; }
+  background-color: #f6f6f6; }
   .ch-dogfriends .ch-dogfriends__title {
     text-align: center;
     padding-bottom: 60px;
@@ -429,7 +446,6 @@ section.ch-about {
     padding-top: 60px; }
 
 .ch-features {
-  padding: 80px 0;
   position: relative; }
   .ch-features .ch-features__title {
     color: #545454;
@@ -457,7 +473,6 @@ section.ch-about {
 
 .ch-donation {
   background-color: #f6f6f6;
-  padding: 80px 0;
   position: relative; }
   .ch-donation .ch-donation-desc {
     display: flex;
@@ -495,8 +510,6 @@ section.ch-about {
         color: #b2b2b2; }
 
 .ch-footer {
-  padding: 80px 0;
-  position: relative;
   background: url("/public/assets/images/Dog-footer.jpg") center center;
   background-size: cover; }
   .ch-footer .ch-footer-information {
